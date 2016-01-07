@@ -1,0 +1,4 @@
+/node_modules
+*.log
+/flash/*.swf
+**/.directory

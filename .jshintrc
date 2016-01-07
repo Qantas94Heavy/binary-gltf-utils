@@ -1,0 +1,25 @@
+{ "esnext": true
+, "node": true
+, "browser": false
+, "predef": [ "-Promise" ]
+, "laxcomma": true
+, "laxbreak": true
+, "eqeqeq": true
+, "eqnull": false
+, "strict": "global"
+, "curly": false
+, "expr": false
+, "devel": true
+, "debug": true
+, "varstmt": true
+, "unused": true
+, "nonew": true
+, "undef": true
+, "bitwise": true
+, "validthis": true
+, "maxerr": 50
+, "-W058": false
+, "-W002": false
+, "-W004": false
+, "maxlen": 99
+}
