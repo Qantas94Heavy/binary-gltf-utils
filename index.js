@@ -92,19 +92,6 @@ fs.readFileAsync(filename, 'utf-8').then(function (gltf) {
   });
 
   // TODO: embed shaders and images into body (especially if already embedded as base64)
-  Object.keys(scene.shaders).forEach(function (bufferViewId) {
-    const bufferView = scene.bufferViews[bufferViewId];
-    const bufferId = bufferView.buffer;
-    const referencedBuffer = buffers[bufferId];
-
-    if (!referencedBuffer) {
-      throw new Error(util.format('buffer ID reference not found: %s', bufferId));
-    }
-
-    bufferView.buffer = argv.cesium ? 'KHR_binary_glTF' : 'binary_glTF';
-    bufferView.byteOffset += referencedBuffer.byteOffset;
-  });
-
 
   const newSceneStr = JSON.stringify(scene);
   const sceneLength = Buffer.byteLength(newSceneStr);
