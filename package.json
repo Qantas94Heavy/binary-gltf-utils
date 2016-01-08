@@ -1,7 +1,7 @@
 { "name": "binary-gltf-utils"
 , "description": "Allows the conversion of GLTF to Binary GLTF (.glb) files."
 , "keywords": [ "gltf", "binary", "glb", "converter" ]
-, "version": "1.0.1"
+, "version": "1.1.0"
 , "license": "MIT"
 , "author": "Karl Cheng <qantas94heavy@gmail.com>"
 , "repository": "qantas94heavy/binary-gltf-utils"
