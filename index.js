@@ -132,7 +132,6 @@ fs.readFileAsync(filename, 'utf-8').then(function (gltf) {
   });
 
   // TODO: embed images into body (especially if already embedded as base64)
-  /*
   Object.keys(scene.images).forEach(function (imageId) {
     const image = scene.images[imageId];
     const uri = image.uri;
@@ -158,7 +157,6 @@ fs.readFileAsync(filename, 'utf-8').then(function (gltf) {
 
     promises.push(promise);
   });
-  */
 
   return Promise.all(promises).return(scene);
 }).then(function (scene) {
@@ -175,7 +173,6 @@ fs.readFileAsync(filename, 'utf-8').then(function (gltf) {
   else scene.buffers = undefined;
 
   const newSceneStr = JSON.stringify(scene);
-  fs.writeFileSync('test', newSceneStr);
   const sceneLength = Buffer.byteLength(newSceneStr);
   // As body is 4-byte aligned, the scene length must be padded to have a multiple of 4.
   // jshint bitwise:false
