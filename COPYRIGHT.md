@@ -1,7 +1,7 @@
 COPYRIGHT
 =========
 
-Copyright (c) 2016 Karl Cheng
+Copyright (c) 2016-17 Karl Cheng
 
 This code is released under the MIT licence:
 
