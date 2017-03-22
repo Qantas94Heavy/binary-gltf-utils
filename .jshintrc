@@ -12,6 +12,7 @@
 , "devel": true
 , "debug": true
 , "varstmt": true
+, "loopfunc": true
 , "unused": true
 , "nonew": true
 , "undef": true
