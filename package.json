@@ -1,16 +1,22 @@
 { "name": "binary-gltf-utils"
 , "description": "Allows the conversion of GLTF to Binary GLTF (.glb) files."
-, "keywords": [ "gltf", "binary", "glb", "converter" ]
-, "version": "1.1.1"
+, "keywords": [ "gltf", "binary", "glb", "converter", "bgltf", "cesium", "webgl" ]
+, "version": "1.2.0"
 , "license": "MIT"
 , "author": "Karl Cheng <qantas94heavy@gmail.com>"
 , "repository": "qantas94heavy/binary-gltf-utils"
 , "bugs": "https://github.com/Qantas94Heavy/binary-gltf-utils/issues"
 , "dependencies":
   { "bluebird": "^3.1.1"
-  , "yargs": "^3.31.0"
+  , "yargs": "^7.0.2"
   }
-, "bin": { "gltf-to-glb": "./index.js" }
-, "engines" : { "node" : ">=4.0.0" }
+, "devDependencies":
+  { "mocha": "^3.2.0"
+  , "chai": "^3.5.0"
+  , "chai-as-promised": "^6.0.0"
+  }
+, "bin": { "gltf-to-glb": "./src/index.js" }
+, "scripts": { "test": "mocha" }
+, "engines" : { "node" : ">=6.0.0" }
 , "preferGlobal": true
 }
